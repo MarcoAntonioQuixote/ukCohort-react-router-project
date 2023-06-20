@@ -7,7 +7,7 @@ const useFetchStudents = () => {
     const [students,setStudents] = useState([]);
 
     const instance = axios.create({
-        baseURL: 'URL LINK HERE',
+        baseURL: process.env.REACT_APP_API_URL,
         headers: {"content-type": "application/json"}
     })
 

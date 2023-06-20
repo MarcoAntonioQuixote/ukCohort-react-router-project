@@ -47,3 +47,10 @@ body {
   height: 100px;
   border-radius: 100%;
 }
+
+.students {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  justify-content: space-between;
+}

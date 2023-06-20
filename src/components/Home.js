@@ -25,7 +25,7 @@ const StudentCard = ({student}) => {
           <img className='studentPic' src={student.avatar}/>
       </Link>
       <CardText>
-        {student.avatar}
+        {student.avatar.slice(0,50)}
       </CardText>
     </CardBody>
   </Card>
@@ -39,7 +39,7 @@ function Home() {
     const showStudents = students.map(s => <StudentCard key={s.id} student={s}/>)
 
   return (
-    <div>
+    <div className='students'>
         {showStudents}
     </div>
   )
